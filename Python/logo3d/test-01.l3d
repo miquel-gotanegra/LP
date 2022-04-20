@@ -1,0 +1,76 @@
+PROC euclides(a, b) IS
+    WHILE a != b DO
+        IF a > b THEN
+            a := a - b
+        ELSE
+            b := b - a
+        END
+    END
+    << a
+END
+
+PROC quadrat_blau(mida) IS
+    color(0.2, 0.2, 1)
+    FOR i FROM 1 TO 4 DO
+        forward(mida)
+        left(90)
+    END
+END
+
+PROC cercle(mida, costats) IS
+    FOR i FROM 1 TO costats DO
+        forward(mida)
+        left(360 / costats)
+    END
+END
+
+PROC espiral(cercles) IS
+    IF cercles > 0 THEN
+        cercle(1, 12)
+        up(5)
+        espiral(cercles - 1)
+    END
+END
+
+PROC reclist(n) IS
+    IF n > 0 THEN
+        reclist(n-1)
+    ELSE
+        <<3.1415
+    END
+
+    << n
+END
+
+PROC main() IS
+    
+    >>k
+    espiral(k)
+    
+    home()
+    color(1,0.5,0)
+    cercle(3,12)
+
+    
+
+    color(0,1,0)
+    //espiral(10)
+    quadrat_blau(3)
+    right(90)
+    quadrat_blau(3)
+    right(90)
+    quadrat_blau(3)
+    right(90)
+    quadrat_blau(3)
+    reclist(k)
+
+    hide()
+    home()
+    up(180)
+    color(0,1,1)
+    espiral(k)
+
+    
+
+
+END

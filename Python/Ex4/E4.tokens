@@ -1,0 +1,9 @@
+EQ=1
+WRITE=2
+WORD=3
+NUM=4
+MES=5
+WS=6
+' := '=1
+'write'=2
+'+'=5

@@ -1,0 +1,6 @@
+paco := 3 + 5
+write paco
+y := 3 + paco + 5
+write y
+
+z := 3 + 69

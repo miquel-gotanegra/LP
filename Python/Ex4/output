@@ -1,0 +1,7 @@
+(root
+	(func (assig paco  :=  (expr (expr 3) + (expr 5)))) 
+	(func (write write paco)) 
+	(func (assig y  :=  (expr (expr (expr 3) + (expr x)) + (expr 5))))
+	(func (write write y)) 
+	<EOF>
+)
